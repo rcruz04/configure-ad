@@ -111,29 +111,42 @@ Go back into Client-1 and ensure that the ping requests are now going through. T
 <!-- --><h2>3. Install Active Directory</h2>
 
 <p>
-<img width="1470" alt="Screenshot 2024-07-23 at 8 04 36 PM" src="https://github.com/user-attachments/assets/1b51dd45-e098-4af9-82df-bacc31c99e24">
+<img width="1470" alt="Screenshot 2024-07-24 at 10 14 07 AM" src="https://github.com/user-attachments/assets/289d0091-3cd5-486d-88af-2b8eddefa389">
 </p>
   <h3>Login to DC-1 and install Active Directory Domain Services</h3> 
 <p>
-In DC-1, in server manager, go to add roles and features which will open a window, just click next until the window with all the services and select AD lightweight directory services and install it.
+In DC-1, in server manager, go to add roles and features which will open a window, just click next until the window with all the services and select AD domain services and install it.
 </p>
 <br />
 
 <p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%"/>
+<img width="1470" alt="Screenshot 2024-07-24 at 10 17 05 AM" src="https://github.com/user-attachments/assets/855b6395-0143-425c-9062-73b5d5c8fb7f">
 </p>
   <h3>Promote to a DC</h3> 
 <p>
-subsitution text
+Click on the flag in the corner adn click "Premote to DC".
 </p>
 <br />
 
 <p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%"/>
+<img width="1470" alt="Screenshot 2024-07-24 at 10 18 32 AM" src="https://github.com/user-attachments/assets/43d6f807-d3b2-46ee-909c-6b20fdd53b3c">
+</p>
+  <h3>Make a new domnain</h3> 
+<p>
+Select "Add new forest" and type out your new domain. I put "myserver.com", set up DSRM password and click next a few times to install AD. It should reset to install.
+</p>
+<br />
+
+<p>
+<img width="711" alt="Screenshot 2024-07-24 at 10 33 19 AM" src="https://github.com/user-attachments/assets/5586fa46-a949-4db8-adba-c7a8f381eb5d">
 </p>
   <h3>Restart and then log back into DC-1 as user</h3> 
 <p>
-subsitution text
+After restarting, the username will change to the domain you set up and the user.
+
+```
+myserver.com\adminuser
+```
 </p>
 <br />
 
