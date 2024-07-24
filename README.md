@@ -153,56 +153,56 @@ myserver.com\adminuser
 <!-- --> <h2>4. Create an Admin and Normal User Account in AD</h2>
 
 <p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%"/>
+<img width="1470" alt="Screenshot 2024-07-24 at 10 37 13 AM" src="https://github.com/user-attachments/assets/efa9e941-5934-4b0e-a4fe-04241dba3581">
+<img width="1470" alt="Screenshot 2024-07-24 at 10 37 42 AM" src="https://github.com/user-attachments/assets/79701887-fdd1-43e9-999b-56b2776c0e3d">
 </p>
   <h3>Create Organizational Unit “_EMPLOYEES”</h3> 
 <p>
-subsitution text
-</p>
+Press the windows key, and type "Active Directory Users and Computers". After it opens select the domain, then right-click and slect "New", then "Orgainizational Unit". After4 name the Organizational Unit "_EMPLOYEES"</p>
 <br />
 
 <p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%"/>
+<img width="1470" alt="Screenshot 2024-07-24 at 10 43 08 AM" src="https://github.com/user-attachments/assets/efebe8eb-51a4-46f6-bff0-cc55de54b136">
 </p>
   <h3>Create Organizational Unit “_CLIENTS”</h3> 
 <p>
-subsitution text
+In the same domain, create an OU named "_CLIENTS".
 </p>
 <br />
 
 <p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%"/>
+<img width="1470" alt="Screenshot 2024-07-24 at 10 45 38 AM" src="https://github.com/user-attachments/assets/439c2810-151a-4e46-bfdc-e71a5000bce6">
 </p>
   <h3>Create Organizational Unit “_ADMINS”</h3> 
 <p>
-subsitution text
+In the same domain, create an OU named "_ADMINS". See the picture for how the domain root should look like at the end.
 </p>
 <br />
 
 <p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%"/>
+<img width="1470" alt="Screenshot 2024-07-24 at 10 50 13 AM" src="https://github.com/user-attachments/assets/693bfc27-6824-422d-b8aa-3b3cc9c14a06">
 </p>
   <h3>Create a new employee</h3> 
 <p>
-subsitution text
+Add a new user named "Jane Doe" in the _ADMINS OU. Make the username "jane.doe_admin"
 </p>
 <br />
 
 <p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%"/>
+<img width="1470" alt="Screenshot 2024-07-24 at 10 54 25 AM" src="https://github.com/user-attachments/assets/3aec6cda-17b6-4e67-a198-ef3450063870">
 </p>
   <h3>Add jane_admin to the “Domain Admins” Security Group</h3> 
 <p>
-subsitution text
+Right-click janes user and select "Member of", then click "add", then in the empty text box type "Domain Admins" and click "Check Names"
 </p>
 <br />
 
 <p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%"/>
+<img width="711" alt="Screenshot 2024-07-24 at 10 59 34 AM" src="https://github.com/user-attachments/assets/7bdcd1e1-404a-46c8-acb1-420f2ad9867a">
 </p>
   <h3>Log out and log back in as jane_admin</h3> 
 <p>
-subsitution text
+Log out of the defult user into janes account with the credentals we created.
 </p>
 <br />
 
