@@ -70,27 +70,42 @@ Under the network section when creating the VM, under virtual network, select DC
 <!-- --><h2>2. Ensure Connectivity between the client and Domain Controller</h2>
 
 <p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%"/>
+<img width="1470" alt="Screenshot 2024-07-23 at 7 33 36 PM" src="https://github.com/user-attachments/assets/b5704e14-e297-4f71-9ccd-63e3198da61b">
 </p>
   <h3>Login to Client-1 with Remote Desktop and ping DC-1</h3> 
 <p>
-subsitution text
-</p>
-<br />
-<p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%"/>
-</p>
-  <h3>Login to the Domain Controller and enable ICMPv4</h3> 
-<p>
-subsitution text
+Log in to Client-1 using Remote Connections in windows or using Microsoft's Remote Desktop appliction. To do this, use the public IP address found in the overview of the VM.
 </p>
 <br />
 
 <p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%"/>
+<img width="1470" alt="Screenshot 2024-07-23 at 7 48 38 PM" src="https://github.com/user-attachments/assets/82f19bfc-6a6d-4be1-ad1c-02527baeb415">
+In Client-1 open CMD and ping the domain controller at the privite ip found in the overview. 
+  
+  ``` 
+  ping -t 10.0.0.4
+  ```
+
+  On my lab the domain controller was at 10.0.0.4 but use the ip address found in the overview. It should time out if done correctly.
+</p>
+<br />
+
+<p>
+<img width="1470" alt="Screenshot 2024-07-23 at 7 57 28 PM" src="https://github.com/user-attachments/assets/0b669d9f-4399-41fd-bb30-6a9e79c0e9b6">
+</p>
+  <h3>Login to the Domain Controller and enable ICMPv4</h3> 
+<p>
+Now using the same process to log into Client-1, log into DC-1. Once logged in, go into the windows defender firewall with advanced security and enable ICMPv4 echo requests and replies inside the inbound rules.
+</p>
+<br />
+
+<p>
+<img width="1470" alt="Screenshot 2024-07-23 at 7 58 53 PM" src="https://github.com/user-attachments/assets/ab5ac52a-8d43-4166-87da-beaff7d87884">
 </p>
   <h3>Check back at Client-1 to see the ping succeed</h3> 
-<p>subsitution text</p>
+<p>
+Go back into Client-1 and ensure that the ping requests are now going through. To stop the ping requests, press CTRL+SHIFT+C.
+</p>
 <br />
 
 <!-- --><h2>3. Install Active Directory</h2>
