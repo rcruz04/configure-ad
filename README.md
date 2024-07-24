@@ -50,20 +50,20 @@ In the Azure Portal, in DC-1's network settings and select installed NIC and und
 <br />
 
 <p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" />
+<img width="1470" alt="Screenshot 2024-07-23 at 7 20 44 PM" src="https://github.com/user-attachments/assets/2cb18fda-8e9b-45b2-b082-1b01a981eaa0">
 </p>
   <h3>Create the Client VM (Windows 10) named “Client-1”</h3> 
 <p>
-subsitution text
+In the Azure Portal, Make a VM named "Client-1" in the AD resource group.
 </p>
 <br />
 
 <p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%"/>
+<img width="1470" alt="Screenshot 2024-07-23 at 7 24 38 PM" src="https://github.com/user-attachments/assets/2a83767e-76dd-4c95-bbae-d6f314fcb2ec">
 </p>
   <h3>Ensure that both VMs are in the same vnet</h3> 
 <p>
-subsitution text
+Under the network section when creating the VM, under virtual network, select DC-1 network as opposed to makeing a new virtual network with the VM.
 </p>
 <br />
 
