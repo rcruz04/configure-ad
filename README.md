@@ -111,11 +111,11 @@ Go back into Client-1 and ensure that the ping requests are now going through. T
 <!-- --><h2>3. Install Active Directory</h2>
 
 <p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%"/>
+<img width="1470" alt="Screenshot 2024-07-23 at 8 04 36 PM" src="https://github.com/user-attachments/assets/1b51dd45-e098-4af9-82df-bacc31c99e24">
 </p>
   <h3>Login to DC-1 and install Active Directory Domain Services</h3> 
 <p>
-subsitution text
+In DC-1, in server manager, go to add roles and features which will open a window, just click next until the window with all the services and select AD lightweight directory services and install it.
 </p>
 <br />
 
