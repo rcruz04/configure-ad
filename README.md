@@ -32,20 +32,20 @@ This tutorial outlines the implementation of on-premises Active Directory within
 <!-- --> <h2>1. Setup Resources in Azure</h2>
 
 <p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" />
+<img width="1470" alt="Screenshot 2024-07-23 at 7 12 50 PM" src="https://github.com/user-attachments/assets/81d795d5-1b3f-4b70-9ca0-2bc1960e44ff">
 </p>
   <h3>Create the Domain Controller VM (Windows Server 2022) named “DC-1”</h3> 
 <p>
-subsitution text
+In the Azure Portal, set up Windows Server 2022 in a resource group named "AD-Lab" or another name for the project. Name the VM "DC-1" for domain conteroller one and put the VM in the resource group.
 </p>
 <br />
 
 <p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" />
+<img width="1470" alt="Screenshot 2024-07-23 at 6 59 15 PM" src="https://github.com/user-attachments/assets/0bfc8ba9-f446-4510-9bd3-f05f06f30285">
 </p>
   <h3>Set Domain Controller’s NIC Private IP address to be static</h3> 
 <p>
-subsitution text
+In the Azure Portal, in DC-1's network settings and select installed NIC and under ip configureations, configure the ip configureation to be static.
 </p>
 <br />
 
