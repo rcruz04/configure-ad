@@ -156,8 +156,8 @@ myserver.com\adminuser
 </p>
 <br />
   
-<h2 id="create-an-admin-and-normal-user-account-in-ad">
-  4. Create an Admin and Normal User Account in AD
+<h2 id="step4">
+4. Create an Admin and Normal User Account in AD
 </h2>
 
 
