@@ -159,7 +159,7 @@ myserver.com\adminuser
 <h2> 
 
   
-### Create an Admin and Normal User Account in AD</h2>
+4. ### Create an Admin and Normal User Account in AD</h2>
 
 <p>
 <img width="1470" alt="Screenshot 2024-07-24 at 10 37 13 AM" src="https://github.com/user-attachments/assets/efa9e941-5934-4b0e-a4fe-04241dba3581">
