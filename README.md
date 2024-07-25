@@ -159,7 +159,9 @@ myserver.com\adminuser
 </p>
 <br />
   
-4. ### Create an Admin and Normal User Account in AD
+<h2>
+  ### Create an Admin and Normal User Account in AD
+</h2>
 
 
 <p>
