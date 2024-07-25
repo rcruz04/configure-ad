@@ -297,7 +297,7 @@ Log into DC-1 as jane and search "powershell_ise" and run as an administrator.
 <p>
 <img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%"/>
 </p>
-<h3>Create a new File and paste the contents of [this]() script into it</h3> 
+<h3>Create a new File and paste the contents of [this](https://github.com/rcruz04/configure-ad/blob/main/Generate-Names-Create-Users.ps1) script into it</h3> 
 <p>
 subsitution text
 </p>
