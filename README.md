@@ -135,7 +135,7 @@ In DC-1, in server manager, go to add roles and features which will open a windo
 <p>
 Click on the flag in the corner adn click "Premote to DC".
 </p>
-<br />
+<br/>
 
 <p>
 <img width="1470" alt="Screenshot 2024-07-24 at 10 18 32 AM" src="https://github.com/user-attachments/assets/43d6f807-d3b2-46ee-909c-6b20fdd53b3c">
@@ -159,8 +159,8 @@ myserver.com\adminuser
 </p>
 <br />
   
-<h2>
-  ### Create an Admin and Normal User Account in AD
+<h2 id="create-an-admin-and-normal-user-account-in-ad">
+  Create an Admin and Normal User Account in AD
 </h2>
 
 
