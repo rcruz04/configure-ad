@@ -215,9 +215,7 @@ Log out of the defult user into janes account with the credentals we created.
 </p>
 <br />
 
-<h2> 
-
-5. ### Join Client to your domain</h2>
+<h2 id="step5">5. Join Client to your domain</h2>
 
 <p>
 <img width="1470" alt="Screenshot 2024-07-24 at 7 11 56 PM" src="https://github.com/user-attachments/assets/3c6d48e7-133c-4a01-a358-9a690f430c86">
