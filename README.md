@@ -257,29 +257,29 @@ Log in to DC-1 and see if client-1 shows up in the computers tab under our domai
 <!-- --> <h2>6. Setup Remote Desktop for non-administrative users on Client</h2>
 
 <p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%"/>
+<img width="1470" alt="Screenshot 2024-07-24 at 8 21 04 PM" src="https://github.com/user-attachments/assets/69401746-2e3c-48e9-9a63-2be24462884e">
 </p>
   <h3>Log into Client-1 jane_admin and open system properties</h3> 
 <p>
-subsitution text
+Open the settings and scroll down to "Remote Desktop"
 </p>
 <br />
 
 <p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%"/>
+<img width="1470" alt="Screenshot 2024-07-24 at 8 23 53 PM" src="https://github.com/user-attachments/assets/a266af24-594f-4cab-ac04-8110778602d1">
 </p>
-  <h3>Click “Remote Desktop”</h3> 
+  <h3>Click “Users account”</h3> 
 <p>
-subsitution text
+Click "Select users that can remotly access this PC" and a window will pop up.
 </p>
 <br />
 
 <p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%"/>
+<img width="1470" alt="Screenshot 2024-07-24 at 8 31 22 PM" src="https://github.com/user-attachments/assets/75efa442-ab80-41ca-b838-652edb28dd3c">
 </p>
   <h3>Allow “domain users” access to remote desktop</h3> 
 <p>
-subsitution text
+Click "Add" and then in the empty text box type "domain users" and click "check names" and then click ok.
 </p>
 <br />
 
