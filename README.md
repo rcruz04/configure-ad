@@ -22,14 +22,16 @@ This tutorial outlines the implementation of on-premises Active Directory within
 <h2>High-Level Deployment and Configuration Steps</h2>
 
 1. [Setup Resources in Azure](#setup-resources-in-azure)
-2. Ensure Connectivity between the client and Domain Controller
+2. [Ensure Connectivity between the client and Domain Controller](#ensure-connectivity-between-the-client-and-domain-controller)
 3. Install Active Directory
 4. Create an Admin and Normal User Account in AD
 5. Join Client to your domain
 6. Setup Remote Desktop for non-administrative users on Client
 7. Create additional users for testing
 
-<h2>1. Setup Resources in Azure</h2>
+<h2> 
+
+1. ### Setup Resources in Azure</h2>
 
 <p>
 <img width="1470" alt="Screenshot 2024-07-23 at 7 12 50 PM" src="https://github.com/user-attachments/assets/81d795d5-1b3f-4b70-9ca0-2bc1960e44ff">
@@ -67,7 +69,9 @@ Under the network section when creating the VM, under virtual network, select DC
 </p>
 <br />
 
-<h2>2. Ensure Connectivity between the client and Domain Controller</h2>
+<h2>
+  
+2. ### Ensure Connectivity between the client and Domain Controller</h2>
 
 <p>
 <img width="1470" alt="Screenshot 2024-07-23 at 7 33 36 PM" src="https://github.com/user-attachments/assets/b5704e14-e297-4f71-9ccd-63e3198da61b">
@@ -329,8 +333,12 @@ Log in with one of the created users from the script. I used "Babe Kov" with the
 </p>
 <br />
 
+<h2>
+  
+This concludes making of On-premise solution for active directory, I continue with network groups in a different [project](https://github.com/rcruz04/azure-network-protocols).</h2>
 
-<!--  end  -->
+
+end
 
 
 
