@@ -116,7 +116,8 @@ Go back into Client-1 and ensure that the ping requests are now going through. T
 
 <h2>
  
-3. ### Install Active Directory</h2>
+3. ### Install Active Directory
+</h2>
 
 <p>
 <img width="1470" alt="Screenshot 2024-07-24 at 10 14 07 AM" src="https://github.com/user-attachments/assets/289d0091-3cd5-486d-88af-2b8eddefa389">
@@ -161,7 +162,8 @@ myserver.com\adminuser
 <h2> 
 
   
-4. ### Create an Admin and Normal User Account in AD</h2>
+4. ### Create an Admin and Normal User Account in AD
+</h2>
 
 <p>
 <img width="1470" alt="Screenshot 2024-07-24 at 10 37 13 AM" src="https://github.com/user-attachments/assets/efa9e941-5934-4b0e-a4fe-04241dba3581">
