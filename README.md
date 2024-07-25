@@ -160,7 +160,7 @@ myserver.com\adminuser
 <br />
   
 <h2 id="create-an-admin-and-normal-user-account-in-ad">
-  Create an Admin and Normal User Account in AD
+  4. Create an Admin and Normal User Account in AD
 </h2>
 
 
