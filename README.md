@@ -42,7 +42,7 @@ This tutorial outlines the implementation of on-premises Active Directory within
 </p>
   <h3>Create the Domain Controller VM (Windows Server 2022) named “DC-1”</h3> 
 <p>
-In the Azure Portal, set up Windows Server 2022 in a resource group named "AD-Lab" or another name for the project. Name the VM "DC-1" for domain conteroller one and put the VM in the resource group.
+In the Azure Portal, set up Windows Server 2022 in a resource group named "AD-Lab" or another name for the project. Name the VM "DC-1" for domain controller one and put the VM in the resource group.
 </p>
 <br />
 
@@ -51,7 +51,7 @@ In the Azure Portal, set up Windows Server 2022 in a resource group named "AD-La
 </p>
   <h3>Set Domain Controller’s NIC Private IP address to be static</h3> 
 <p>
-In the Azure Portal, in DC-1's network settings and select installed NIC and under ip configureations, configure the ip configureation to be static.
+In the Azure Portal, in DC-1's network settings and select installed NIC and under ip configurations, configure the ip configuration to be static.
 </p>
 <br />
 
@@ -69,7 +69,7 @@ In the Azure Portal, Make a VM named "Client-1" in the AD resource group.
 </p>
   <h3>Ensure that both VMs are in the same vnet</h3> 
 <p>
-Under the network section when creating the VM, under virtual network, select DC-1 network as opposed to makeing a new virtual network with the VM.
+Under the network section when creating the VM, under virtual network, select DC-1 network as opposed to making a new virtual network with the VM.
 </p>
 <br/>
 
@@ -84,19 +84,19 @@ Under the network section when creating the VM, under virtual network, select DC
 </p>
   <h3>Login to Client-1 with Remote Desktop and ping DC-1</h3> 
 <p>
-Log in to Client-1 using Remote Connections in windows or using Microsoft's Remote Desktop appliction. To do this, use the public IP address found in the overview of the VM.
+Log in to Client-1 using Remote Connections in windows or using Microsoft's Remote Desktop application. To do this, use the public IP address found in the overview of the VM.
 </p>
 <br />
 
 <p>
 <img width="1470" alt="Screenshot 2024-07-23 at 7 48 38 PM" src="https://github.com/user-attachments/assets/82f19bfc-6a6d-4be1-ad1c-02527baeb415">
-In Client-1 open CMD and ping the domain controller at the privite ip found in the overview. 
+In Client-1 open CMD and ping the domain controller at the private ip found in the overview. 
   
   ``` 
   ping -t 10.0.0.4
   ```
 
-  On my lab the domain controller was at 10.0.0.4 but use the ip address found in the overview. It should time out if done correctly.
+  In my lab the domain controller was at 10.0.0.4 but use the ip address found in the overview. It should time out if done correctly.
 </p>
 <br />
 
@@ -129,7 +129,7 @@ Go back into Client-1 and ensure that the ping requests are now going through. T
 </p>
   <h3>Login to DC-1 and install Active Directory Domain Services</h3> 
 <p>
-In DC-1, in server manager, go to add roles and features which will open a window, just click next until the window with all the services and select AD domain services and install it.
+In DC-1, in server manager, go to add roles and features which will open a window, just click next until the window with all the services pops up and select AD domain services and install it.
 </p>
 <br />
 
@@ -138,14 +138,14 @@ In DC-1, in server manager, go to add roles and features which will open a windo
 </p>
   <h3>Promote to a DC</h3> 
 <p>
-Click on the flag in the corner adn click "Premote to DC".
+Click on the flag in the corner and click "Promote to DC".
 </p>
 <br/>
 
 <p>
 <img width="1470" alt="Screenshot 2024-07-24 at 10 18 32 AM" src="https://github.com/user-attachments/assets/43d6f807-d3b2-46ee-909c-6b20fdd53b3c">
 </p>
-  <h3>Make a new domnain</h3> 
+  <h3>Make a new domain</h3> 
 <p>
 Select "Add new forest" and type out your new domain. I put "myserver.com", set up DSRM password and click next a few times to install AD. It should reset to install.
 </p>
@@ -176,7 +176,7 @@ myserver.com\adminuser
 </p>
   <h3>Create Organizational Unit “_EMPLOYEES”</h3> 
 <p>
-Press the windows key, and type "Active Directory Users and Computers". After it opens select the domain, then right-click and slect "New", then "Orgainizational Unit". After4 name the Organizational Unit "_EMPLOYEES"</p>
+Press the windows key, and type "Active Directory Users and Computers". After it opens select the domain, then right-click and select "New", then "Organizational Unit". After4 name the Organizational Unit "_EMPLOYEES"</p>
 <br />
 
 <p>
@@ -220,7 +220,7 @@ Right-click janes user and select "Member of", then click "add", then in the emp
 </p>
   <h3>Log out and log back in as jane_admin</h3> 
 <p>
-Log out of the defult user into janes account with the credentals we created.
+Log out of the default user into janes account with the credentials we created.
 </p>
 <br />
 
@@ -235,7 +235,7 @@ Log out of the defult user into janes account with the credentals we created.
 </p>
   <h3>Set Client-1’s DNS settings</h3> 
 <p>
-In azure portal, ago into Client-1's network settings and change the DNS settings under the network card and then DNS settings. Set the DNS server to be the privite IP of the domain controller and click save at the top. In my case its 10.0.0.4 but it can be found in the overview of DC-1 settings.
+In the azure portal, go into Client-1's network settings and change the DNS settings under the network card and then DNS settings. Set the DNS server to be the private IP of the domain controller and click save at the top. In my case its 10.0.0.4 but it can be found in the overview of DC-1 settings.
 </p>
 <br />
 
@@ -253,7 +253,7 @@ From the Azure portal, go to Client-1 and click restart to apply the new DNS set
 </p>
   <h3>Login to Client-1 as labuser and join it to the domain</h3> 
 <p>
-In Clien-1, go into the system settings, in the about tab then scroll down to the Advanced system settings. From this menu click the bottem option and in the pop-up select "Member of: Domain" and put the domain of the website we created.
+In Clien-1, go into the system settings, in the about tab then scroll down to the Advanced system settings. From this menu click the bottom option and in the pop-up select "Member of: Domain" and put the domain of the website we created.
 </p>
 <br />
 
@@ -262,7 +262,7 @@ In Clien-1, go into the system settings, in the about tab then scroll down to th
 </p>
   <h3>Login in as jane doe</h3> 
 <p>
-When prompted to log in, log in as jane doe using the credentals we made earlier. We will have to restart for the change to take effect.
+When prompted to log in, login as jane doe using the credentials we made earlier. We will have to restart for the change to take effect.
 </p>
 <br />
 
@@ -271,7 +271,7 @@ When prompted to log in, log in as jane doe using the credentals we made earlier
 </p>
   <h3>Login to the Domain Controller and verify Client-1 shows up in Active Directory</h3> 
 <p>
-Log in to DC-1 and see if client-1 shows up in the computers tab under our domain. Once varified, right-click on Client-1 and selct move and move it into the _CLIENTS OU.
+Log in to DC-1 and see if client-1 shows up in the computers tab under our domain. Once verified, right-click on Client-1 and select move and move it into the _CLIENTS OU.
 </p>
 <br />
 
@@ -295,7 +295,7 @@ Open the settings and scroll down to "Remote Desktop"
 </p>
   <h3>Click “Users account”</h3> 
 <p>
-Click "Select users that can remotly access this PC" and a window will pop up.
+Click "Select users that can remotely access this PC" and a window will pop up.
 </p>
 <br />
 
@@ -336,7 +336,7 @@ In the application under the file tab, click new and then a new window should op
 </p>
   <h3>Run the script and observe the accounts being created</h3> 
 <p>
-Click the play botton at the top to run the applications and in the blue window, users should be created.
+Click the play button at the top to run the applications and in the blue window, users should be created.
 </p>
 <br />
 
@@ -354,7 +354,7 @@ Open AD Users and Computers and open the _EMPLOYEES OU and watch as it gets popu
 </p>
   <h3>Attempt to log into Client-1 with one of the new accounts</h3> 
 <p>
-Log in with one of the created users from the script. I used "Babe Kov" with the password "Password1" which is spesified in the script.
+Log in with one of the created users from the script. I used "Babe Kov" with the password "Password1" which is specified in the script.
 </p>
 <br />
 
