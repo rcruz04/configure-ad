@@ -1,6 +1,3 @@
-<!---
-
-
 <p align="center">
 <img src="https://i.imgur.com/pU5A58S.png" alt="Microsoft Active Directory Logo"/>
 </p>
@@ -297,16 +294,12 @@ Log into DC-1 as jane and search "powershell_ise" and run as an administrator.
 </p>
 <br />
 
-
-
---->
-
 <p>
 <img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%"/>
 </p>
-<h3>Create a new File and paste the contents of 
-[this script](https://github.com/rcruz04/configure-ad/blob/main/Generate-Names-Create-Users.ps1)
- into it</h3> 
+<h3> 
+  
+Create a new File and paste the contents of [this script](https://github.com/rcruz04/configure-ad/blob/main/Generate-Names-Create-Users.ps1) into it</h3> 
 <p>
 subsitution text
 </p>
