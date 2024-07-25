@@ -23,15 +23,15 @@ This tutorial outlines the implementation of on-premises Active Directory within
 
 1. [Setup Resources in Azure](#setup-resources-in-azure)
 2. [Ensure Connectivity between the client and Domain Controller](#ensure-connectivity-between-the-client-and-domain-controller)
-3. Install Active Directory
-4. Create an Admin and Normal User Account in AD
-5. Join Client to your domain
-6. Setup Remote Desktop for non-administrative users on Client
-7. Create additional users for testing
+3. [Install Active Directory](#install-active-directory)
+4. [Create an Admin and Normal User Account in AD](create-an-admin-and-normal-user-account-in-ad)
+5. [Join Client to your domain](join-client-to-your-domain)
+6. [Setup Remote Desktop for non-administrative users on Client](setup-remote-desktop-for-non-administrative-users-on-client)
+7. [Create additional users for testing](create-additional-users-for-testing)
 
 <h2> 
 
- ### Setup Resources in Azure</h2>
+1. ### Setup Resources in Azure</h2>
 
 <p>
 <img width="1470" alt="Screenshot 2024-07-23 at 7 12 50 PM" src="https://github.com/user-attachments/assets/81d795d5-1b3f-4b70-9ca0-2bc1960e44ff">
@@ -71,7 +71,7 @@ Under the network section when creating the VM, under virtual network, select DC
 
 <h2>
   
-### Ensure Connectivity between the client and Domain Controller</h2>
+2. ### Ensure Connectivity between the client and Domain Controller</h2>
 
 <p>
 <img width="1470" alt="Screenshot 2024-07-23 at 7 33 36 PM" src="https://github.com/user-attachments/assets/b5704e14-e297-4f71-9ccd-63e3198da61b">
@@ -112,7 +112,9 @@ Go back into Client-1 and ensure that the ping requests are now going through. T
 </p>
 <br />
 
-<h2>3. Install Active Directory</h2>
+<h2>
+ 
+3. ### Install Active Directory</h2>
 
 <p>
 <img width="1470" alt="Screenshot 2024-07-24 at 10 14 07 AM" src="https://github.com/user-attachments/assets/289d0091-3cd5-486d-88af-2b8eddefa389">
@@ -154,7 +156,9 @@ myserver.com\adminuser
 </p>
 <br />
 
-<h2>4. Create an Admin and Normal User Account in AD</h2>
+<h2> 
+ 
+4. ### Create an Admin and Normal User Account in AD</h2>
 
 <p>
 <img width="1470" alt="Screenshot 2024-07-24 at 10 37 13 AM" src="https://github.com/user-attachments/assets/efa9e941-5934-4b0e-a4fe-04241dba3581">
@@ -210,7 +214,9 @@ Log out of the defult user into janes account with the credentals we created.
 </p>
 <br />
 
-<h2>5. Join Client to your domain</h2>
+<h2> 
+
+5. ### Join Client to your domain</h2>
 
 <p>
 <img width="1470" alt="Screenshot 2024-07-24 at 7 11 56 PM" src="https://github.com/user-attachments/assets/3c6d48e7-133c-4a01-a358-9a690f430c86">
@@ -258,7 +264,9 @@ Log in to DC-1 and see if client-1 shows up in the computers tab under our domai
 <br />
 
 
-<h2>6. Setup Remote Desktop for non-administrative users on Client</h2>
+<h2>
+ 
+ 6. ### Setup Remote Desktop for non-administrative users on Client</h2>
 
 <p>
 <img width="1470" alt="Screenshot 2024-07-24 at 8 21 04 PM" src="https://github.com/user-attachments/assets/69401746-2e3c-48e9-9a63-2be24462884e">
@@ -287,7 +295,9 @@ Click "Add" and then in the empty text box type "domain users" and click "check 
 </p>
 <br />
 
-<h2>7. Create additional users for testing</h2>
+<h2>
+
+ 7. ### Create additional users for testing</h2>
 
 <p>
 <img width="1470" alt="Screenshot 2024-07-24 at 8 46 57 PM" src="https://github.com/user-attachments/assets/6aaf8175-6f34-4a95-8050-ce7f9e81fe8a">
