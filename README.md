@@ -286,20 +286,11 @@ Click "Add" and then in the empty text box type "domain users" and click "check 
 <!-- --> <h2>7. Create additional users for testing</h2>
 
 <p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%"/>
+<img width="1470" alt="Screenshot 2024-07-24 at 8 46 57 PM" src="https://github.com/user-attachments/assets/6aaf8175-6f34-4a95-8050-ce7f9e81fe8a">
 </p>
-  <h3>Login to DC-1 as jane_admin</h3> 
+  <h3>Log into DC-1 and open PowerShell_ise as an administrator</h3> 
 <p>
-subsitution text
-</p>
-<br />
-
-<p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%"/>
-</p>
-  <h3>Open PowerShell_ise as an administrator</h3> 
-<p>
-subsitution text
+Log into DC-1 as jane and search "powershell_ise" and run as an administrator.
 </p>
 <br />
 
