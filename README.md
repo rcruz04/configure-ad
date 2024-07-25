@@ -289,46 +289,43 @@ Click "Add" and then in the empty text box type "domain users" and click "check 
 <img width="1470" alt="Screenshot 2024-07-24 at 8 46 57 PM" src="https://github.com/user-attachments/assets/6aaf8175-6f34-4a95-8050-ce7f9e81fe8a">
 </p>
   <h3>Log into DC-1 and open PowerShell_ise as an administrator</h3> 
-<p>
-Log into DC-1 as jane and search "powershell_ise" and run as an administrator.
-</p>
 <br />
 
 <p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%"/>
+<img width="1470" alt="Screenshot 2024-07-25 at 12 19 12 PM" src="https://github.com/user-attachments/assets/b969ef70-b631-467b-8e3f-03750ad96449">
 </p>
 <h3> 
   
 Create a new File and paste the contents of [this script](https://github.com/rcruz04/configure-ad/blob/main/Generate-Names-Create-Users.ps1) into it</h3> 
 <p>
-subsitution text
+In the application under the file tab, click new and then a new window should open up. Paste the file listed in the window.
 </p>
 <br />
 
 <p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%"/>
+<img width="1470" alt="Screenshot 2024-07-25 at 12 22 56 PM" src="https://github.com/user-attachments/assets/95055c9e-8e4d-482f-abcf-f0d352770439">
 </p>
   <h3>Run the script and observe the accounts being created</h3> 
 <p>
-subsitution text
+Click the play botton at the top to run the applications and in the blue window, users should be created.
 </p>
 <br />
 
 <p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%"/>
+<img width="1470" alt="Screenshot 2024-07-25 at 12 30 37 PM" src="https://github.com/user-attachments/assets/6babb1d7-ef89-4fa0-920a-a1fac0bb0bd3">
 </p>
   <h3>Observe the accounts being added into OU</h3> 
 <p>
-subsitution text
+Open AD Users and Computers and open the _EMPLOYEES OU and watch as it gets populated with the new users made from the script.
 </p>
 <br />
 
 <p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%"/>
+<img width="793" alt="Screenshot 2024-07-25 at 12 35 50 PM" src="https://github.com/user-attachments/assets/f89ce33e-fbee-4084-91a9-88a4a2fe1ae9">
 </p>
   <h3>Attempt to log into Client-1 with one of the new accounts</h3> 
 <p>
-subsitution text
+Log in with one of the created users from the script. I used "Babe Kov" with the password "Password1" which is spesified in the script.
 </p>
 <br />
 
