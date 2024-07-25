@@ -22,16 +22,15 @@ This tutorial outlines the implementation of on-premises Active Directory within
 <h2>High-Level Deployment and Configuration Steps</h2>
 
 1. [Setup Resources in Azure](#step1)
-2. [Ensure Connectivity between the client and Domain Controller](#ensure-connectivity-between-the-client-and-domain-controller) 
-3. [Install Active Directory](#install-active-directory) 
-4. [Create an Admin and Normal User Account in AD](#create-an-admin-and-normal-user-account-in-ad)
-5. [Join Client to your domain](#join-client-to-your-domain)
-6. [Setup Remote Desktop for non-administrative users on Client](#setup-remote-desktop-for-non-administrative-users-on-client)
-7. [Create additional users for testing](#create-additional-users-for-testing)
+2. [Ensure Connectivity between the client and Domain Controller](#step2) 
+3. [Install Active Directory](#step3) 
+4. [Create an Admin and Normal User Account in AD](#step4)
+5. [Join Client to your domain](#step5)
+6. [Setup Remote Desktop for non-administrative users on Client](#step6)
+7. [Create additional users for testing](#step7)
 
 <h2 id="step1">
-
-1. ### Setup Resources in Azure
+1. Setup Resources in Azure
 </h2>
 
 <p>
@@ -70,9 +69,8 @@ Under the network section when creating the VM, under virtual network, select DC
 </p>
 <br />
 
-<h2>
-  
-2. ### Ensure Connectivity between the client and Domain Controller
+<h2 id="step2">
+2. Ensure Connectivity between the client and Domain Controller
 </h2>
 
 <p>
@@ -114,9 +112,8 @@ Go back into Client-1 and ensure that the ping requests are now going through. T
 </p>
 <br />
 
-<h2>
- 
-3. ### Install Active Directory
+<h2 id="step3">
+3. Install Active Directory
 </h2>
 
 <p>
