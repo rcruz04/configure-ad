@@ -31,7 +31,7 @@ This tutorial outlines the implementation of on-premises Active Directory within
 
 <h2>
 
-2. ### Setup Resources in Azure
+1. ### Setup Resources in Azure
 </h2>
 
 <p>
@@ -72,7 +72,7 @@ Under the network section when creating the VM, under virtual network, select DC
 
 <h2>
   
-### Ensure Connectivity between the client and Domain Controller
+2. ### Ensure Connectivity between the client and Domain Controller
 </h2>
 
 <p>
