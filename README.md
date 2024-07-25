@@ -209,49 +209,50 @@ Log out of the defult user into janes account with the credentals we created.
 <!-- --> <h2>5. Join Client to your domain</h2>
 
 <p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%"/>
+<img width="1470" alt="Screenshot 2024-07-24 at 7 11 56 PM" src="https://github.com/user-attachments/assets/3c6d48e7-133c-4a01-a358-9a690f430c86">
 </p>
   <h3>Set Client-1’s DNS settings</h3> 
 <p>
-subsitution text
+In azure portal, ago into Client-1's network settings and change the DNS settings under the network card and then DNS settings. Set the DNS server to be the privite IP of the domain controller and click save at the top. In my case its 10.0.0.4 but it can be found in the overview of DC-1 settings.
 </p>
 <br />
 
 <p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%"/>
+<img width="1470" alt="Screenshot 2024-07-24 at 7 23 33 PM" src="https://github.com/user-attachments/assets/e526ce28-4794-4395-a774-e488a4ffdf16">
 </p>
   <h3>Restart Client-1</h3> 
 <p>
-subsitution text
+From the Azure portal, go to Client-1 and click restart to apply the new DNS settings.
 </p>
 <br />
 
 <p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%"/>
+<img width="1470" alt="Screenshot 2024-07-24 at 7 37 42 PM" src="https://github.com/user-attachments/assets/2dcba705-2d1a-407c-b593-0cdaa8098452">
 </p>
   <h3>Login to Client-1 as labuser and join it to the domain</h3> 
 <p>
-subsitution text
+In Clien-1, go into the system settings, in the about tab then scroll down to the Advanced system settings. From this menu click the bottem option and in the pop-up select "Member of: Domain" and put the domain of the website we created.
 </p>
 <br />
 
 <p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%"/>
+<img width="1470" alt="Screenshot 2024-07-24 at 7 39 35 PM" src="https://github.com/user-attachments/assets/bb5191d7-9623-4a50-b1a3-3d4c5ebd222d">
+</p>
+  <h3>Login in as jane doe</h3> 
+<p>
+When prompted to log in, log in as jane doe using the credentals we made earlier. We will have to restart for the change to take effect.
+</p>
+<br />
+
+<p>
+<img width="1470" alt="Screenshot 2024-07-24 at 7 43 37 PM" src="https://github.com/user-attachments/assets/faded2cc-b9c0-4b59-8bff-e0bc8608200f">
 </p>
   <h3>Login to the Domain Controller and verify Client-1 shows up in Active Directory</h3> 
 <p>
-subsitution text
+Log in to DC-1 and see if client-1 shows up in the computers tab under our domain. Once varified, right-click on Client-1 and selct move and move it into the _CLIENTS OU.
 </p>
 <br />
 
-<p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%"/>
-</p>
-  <h3>Move Client-1 into "_CLIENTS" OU</h3> 
-<p>
-subsitution text
-</p>
-<br />
 
 <!-- --> <h2>6. Setup Remote Desktop for non-administrative users on Client</h2>
 
