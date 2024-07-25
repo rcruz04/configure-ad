@@ -24,10 +24,10 @@ This tutorial outlines the implementation of on-premises Active Directory within
 1. [Setup Resources in Azure](#setup-resources-in-azure)
 2. [Ensure Connectivity between the client and Domain Controller](#ensure-connectivity-between-the-client-and-domain-controller)
 3. [Install Active Directory](#install-active-directory)
-4. [Create an Admin and Normal User Account in AD](create-an-admin-and-normal-user-account-in-ad)
-5. [Join Client to your domain](join-client-to-your-domain)
-6. [Setup Remote Desktop for non-administrative users on Client](setup-remote-desktop-for-non-administrative-users-on-client)
-7. [Create additional users for testing](create-additional-users-for-testing)
+4. [Create an Admin and Normal User Account in AD](#create-an-admin-and-normal-user-account-in-ad)
+5. [Join Client to your domain](#join-client-to-your-domain)
+6. [Setup Remote Desktop for non-administrative users on Client](#setup-remote-desktop-for-non-administrative-users-on-client)
+7. [Create additional users for testing](#create-additional-users-for-testing)
 
 <h2> 
 
