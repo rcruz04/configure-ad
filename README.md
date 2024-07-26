@@ -360,7 +360,7 @@ Log in with one of the created users from the script. I used "Babe Kov" with the
 
 <h2>
   
-This concludes making of On-premise solution for active directory, I continue with network groups in a different [project](https://github.com/rcruz04/azure-network-protocols).</h2>
+This concludes making of On-premise solution for active directory, to look at the other projects ive done you can look at my [home page](https://github.com/rcruz04/).</h2>
 
 
 end
